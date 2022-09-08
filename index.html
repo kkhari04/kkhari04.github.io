@@ -11,12 +11,28 @@
       <p>WEBSITE</p>
         
       <p>Hello World! I'm KK. This is my Website.</p>
+      	
+      public function Circle() {
+			// constructor code
+			trace("drawing a Circle");
+			drawCircle();
+			addChild(canvas);
+		}
+		
+		//draw Circle method
+		private function drawCircle():void {
+			//drawing circle inside the graphics object
+			gr.lineStyle(6, 0x0000FF, 0.5);
+			gr.beginFill(0xFF0000, 0.5);
+			gr.drawCircle(200, 200, 50);
+			gr.endFill();
+		}
       
     </body>
     <details><summary>WATER/FOOD DISTRIBUTION</summary>
 <p>
 
-#### This will be information on Water and Food Distribution. Data included in this section will include data, resources, and implementation plans. 
+This will be information on Water and Food Distribution. Data included in this section will include data, resources, and implementation plans. 
 
 </p>
 </details>
@@ -24,7 +40,7 @@
      <details><summary>ENVIRONMENT SUSTAINABILITY</summary>
 <p>
 
-#### This will be information on Environment Sustainablity.  
+This will be information on Environment Sustainablity.  
 
 </p>
 </details>
@@ -32,12 +48,11 @@
      <details><summary>SHELTER SOLUTIONS</summary>
 <p>
 
-#### This will be information on Shelter solutions. 
+This will be information on Shelter solutions. 
 
 </p>
 </details>
 
 
     </html>
-
 
