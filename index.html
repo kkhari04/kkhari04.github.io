@@ -11,22 +11,32 @@
       <p>WEBSITE</p>
         
       <p>Hello World! I'm KK. This is my Website.</p>
-      .style {
-  background: #123456;
-  color: rgb( 255,128,64);
-  border-left: 1px hsla(65, 100%, 50%, 1) solid;
-  border-right-color: maroon;
-  box-shadow: 3px 3px hsl( 128, 30%, 50% );
-  text-shadow: 2px 5px rgba(255, 0,  183,0.5);
+      function draw() {
+  var ctx = document.getElementById('canvas').getContext('2d');
+  // draw background
+  ctx.fillStyle = 'gold';
+  ctx.fillRect(0,0,75,75);
+  ctx.fillStyle = '#6C0';
+  ctx.fillRect(75,0,75,75);
+  ctx.fillStyle = '#09F';
+  ctx.fillRect(0,75,75,75);
+  ctx.fillStyle = 'hsl(12, 100%, 50%)';
+  ctx.fillRect(75,75,75,75);
+  ctx.fillStyle = 'rgba(255, 255, 255, 1)';
+  // set transparency value
+  ctx.globalAlpha = 0.2;
+
+  // Draw semi transparent circles
+  for (i=0;i<7;i++){
+    ctx.beginPath();
+    ctx.arc(75,75,10+10*i,0,Math.PI*2,true);
+    ctx.fill();
+  }
 }
+draw();
       	<link href="https://www.shapecss.com/public/shape.css" rel="stylesheet">
 <!--IMPORTANT: script must be add in the bottom of the body tag-->
 <script src="https://www.shapecss.com/public/shape.js"></script>
-    <!--basic circle, easy-->
-<circle></circle> 
-
-<!--circle with radius 400px and background blue-->
-<circle shape-background="blue" shape-radius="400px"><circle> 
       
     </body>
     <details><summary>FOOD/WATER INSECURITY</summary>
