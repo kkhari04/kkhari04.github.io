@@ -25,15 +25,13 @@
   ctx.fillStyle = 'rgba(255, 255, 255, 1)';
   // set transparency value
   ctx.globalAlpha = 0.2;
-
-  // Draw semi transparent circles
-  for (i=0;i<7;i++){
-    ctx.beginPath();
-    ctx.arc(75,75,10+10*i,0,Math.PI*2,true);
-    ctx.fill();
-  }
 }
 draw();
+      return new SimpleCircleButton.Builder()
+                .isRound(false)
+                .shadowCornerRadius(Util.dp2px(20))
+                .buttonCornerRadius(Util.dp2px(20))
+                .normalImageRes(getImageResource());
       	<link href="https://www.shapecss.com/public/shape.css" rel="stylesheet">
 <!--IMPORTANT: script must be add in the bottom of the body tag-->
 <script src="https://www.shapecss.com/public/shape.js"></script>
