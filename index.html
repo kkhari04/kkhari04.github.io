@@ -11,32 +11,7 @@
       <p>WEBSITE</p>
         
       <p>Hello World! I'm KK. This is my Website.</p>
-      void lineSegment(int x, int y,int x2,int y2){
-glClear(GL_COLOR_BUFFER_BIT);
-glColor3f(0.0,0.8,0.8);
-glBegin(GL_LINES);
-glVertex2i(x,y);
-glVertex2i(x2,y2);
-glEnd();
-glFlush();
-}
-void draw_hoop(GLint center_x, GLuint center_y, GLuint radius) {
-
-int i;
-int lineAmount = 100; //# of triangles used to draw circle
-
-//GLfloat radius = 0.8f; //radius
-GLfloat twicePi = 2 * 3.141592; 
-
-glBegin(GL_LINE_LOOP);
-    for(i = 0; i <= lineAmount;i++) { 
-        glVertex2f(
-            center_x + (radius * cos(i *  twicePi / lineAmount)), 
-            center_y + (radius* sin(i * twicePi / lineAmount))
-        );
-    }
-glEnd();
-}
+     
     </body>
     <details><summary>FOOD/WATER INSECURITY</summary>
 <p>
