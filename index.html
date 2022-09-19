@@ -11,31 +11,32 @@
       <p>WEBSITE</p>
         
       <p>Hello World! I'm KK. This is my Website.</p>
-      function draw() {
-  var ctx = document.getElementById('canvas').getContext('2d');
-  // draw background
-  ctx.fillStyle = 'gold';
-  ctx.fillRect(0,0,75,75);
-  ctx.fillStyle = '#6C0';
-  ctx.fillRect(75,0,75,75);
-  ctx.fillStyle = '#09F';
-  ctx.fillRect(0,75,75,75);
-  ctx.fillStyle = 'hsl(12, 100%, 50%)';
-  ctx.fillRect(75,75,75,75);
-  ctx.fillStyle = 'rgba(255, 255, 255, 1)';
-  // set transparency value
-  ctx.globalAlpha = 0.2;
+      void lineSegment(int x, int y,int x2,int y2){
+glClear(GL_COLOR_BUFFER_BIT);
+glColor3f(0.0,0.8,0.8);
+glBegin(GL_LINES);
+glVertex2i(x,y);
+glVertex2i(x2,y2);
+glEnd();
+glFlush();
 }
-draw();
-      return new SimpleCircleButton.Builder()
-                .isRound(false)
-                .shadowCornerRadius(Util.dp2px(20))
-                .buttonCornerRadius(Util.dp2px(20))
-                .normalImageRes(getImageResource());
-      	<link href="https://www.shapecss.com/public/shape.css" rel="stylesheet">
-<!--IMPORTANT: script must be add in the bottom of the body tag-->
-<script src="https://www.shapecss.com/public/shape.js"></script>
-      
+void draw_hoop(GLint center_x, GLuint center_y, GLuint radius) {
+
+int i;
+int lineAmount = 100; //# of triangles used to draw circle
+
+//GLfloat radius = 0.8f; //radius
+GLfloat twicePi = 2 * 3.141592; 
+
+glBegin(GL_LINE_LOOP);
+    for(i = 0; i <= lineAmount;i++) { 
+        glVertex2f(
+            center_x + (radius * cos(i *  twicePi / lineAmount)), 
+            center_y + (radius* sin(i * twicePi / lineAmount))
+        );
+    }
+glEnd();
+}
     </body>
     <details><summary>FOOD/WATER INSECURITY</summary>
 <p>
