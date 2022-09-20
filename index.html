@@ -16,7 +16,21 @@ table, th, td {
     <body>
       <h1 style="border:2px solid DodgerBlue;text-align:center;">INDIAN SOCIAL WELFARE RESOURCES</h1>
   
-        
+      <p>Click the button to demonstrate the prompt box.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let person = prompt("Please enter your name", "Harry Potter");
+  if (person != null) {
+    document.getElementById("demo").innerHTML =
+    "Hello " + person + "! How are you today?";
+  }
+}
+</script>  
       <h2>Add the respective details:</h2>
       <button onclick="a()">Enter Data</button>
       <p id="demo"></p?
