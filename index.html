@@ -18,7 +18,7 @@ table, th, td {
   
       <p>Click the button to give us an understanding of your situation.</p>
 
-<button onclick="myFunction()">Click here</button>
+<button onclick="s()">Surrounding</button>
 
 <p id="demo"></p>
 
@@ -31,16 +31,16 @@ function myFunction() {
   }
 }
 </script>  
-<button onclick="a()">Click here</button>
+<button onclick="a()">Conflict</button>
 
 <p id="demo"></p>
 
 <script>
 function a() {
-  let s = prompt("Please enter your surrounding:", "city or village");
+  let s = prompt("Please enter the current conflict(s) existing:", "insecurity, enviornment, or shelter");
   if (s != null) {
     document.getElementById("demo").innerHTML =
-    "Hello, we understand your area is a " + a + ". Please answer the next question";
+    "Hello, we understand your area is experiencing a(n) " + a + "problem. Please answer the next question";
   }
   </script> 
 <button onclick="b()">Click here</button>
@@ -49,10 +49,10 @@ function a() {
 
 <script>
 function b() {
-  let s = prompt("Please enter your surrounding:", "city or village");
+  let s = prompt("Please enter your budget for this project:", "$$$");
   if (s != null) {
     document.getElementById("demo").innerHTML =
-    "Hello, we understand your area is a " + b + ". Please answer the next question";
+    "Hello, we understand your budget is " + b + ". Please look over the given data base on your provide information. Additionally look under the resources section to find extra information.";
   }
 </script> 
     </body>
