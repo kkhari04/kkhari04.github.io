@@ -22,11 +22,25 @@ table, th, td {
       <p id="demo"></p?
       
       <script>
-      function myFunction() {
-      let surrounding = prompt("Please Enter your surrounding : City of Village", "Surrounding");
+      function a() {
+      let surrounding = prompt("Please Enter your surrounding : City or Village", "Surrounding");
       if(surrounding != null) {
       document.getElementById("demo").innerHTML =
       "We understand that your current surrounding is " + surrounding + ". Please Fill out the next question.";
+      }
+      }
+      function b() {
+      let problem = prompt("Please Enter the current problem : Insecurity, Enviornment, Shelter", "problem");
+      if(problem != null) {
+      document.getElementById("demo").innerHTML =
+      "We understand that your current problem is " + problem + "and we are formulating solutions and resources. Please Fill out the next question.";
+      }
+      }
+      function c() {
+      let budget = prompt("Please Enter your budget for this project", "$");
+      if(budget != null) {
+      document.getElementById("demo").innerHTML =
+      "We understand that your current budget is " + budget);
       }
       }
       </script>
