@@ -37,10 +37,10 @@ function myFunction() {
 
 <script>
 function a() {
-  let s = prompt("Please enter the current conflict(s) existing:", "insecurity, enviornment, or shelter");
-  if (s != null) {
+  let problem = prompt("Please enter the current conflict(s) existing:", "insecurity, enviornment, or shelter");
+  if (problem != null) {
     document.getElementById("demo").innerHTML =
-    "Hello, we understand your area is experiencing a(n) " + a + "problem. Please answer the next question";
+    "Hello, we understand your area is experiencing a(n) " + problem + "problem. Please answer the next question";
   }
   </script> 
 <button onclick="b()">Click here</button>
@@ -49,10 +49,10 @@ function a() {
 
 <script>
 function b() {
-  let s = prompt("Please enter your budget for this project:", "$$$");
-  if (s != null) {
+  let budget = prompt("Please enter your budget for this project:", "$$$");
+  if (budget != null) {
     document.getElementById("demo").innerHTML =
-    "Hello, we understand your budget is " + b + ". Please look over the given data base on your provide information. Additionally look under the resources section to find extra information.";
+    "Hello, we understand your budget is $" + budget+ ". Please look over the given data base on your provide information. Additionally look under the resources section to find extra information.";
   }
 </script> 
     </body>
