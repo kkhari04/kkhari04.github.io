@@ -31,7 +31,30 @@ function myFunction() {
   }
 }
 </script>  
-     
+<button onclick="a()">Click here</button>
+
+<p id="demo"></p>
+
+<script>
+function a() {
+  let s = prompt("Please enter your surrounding:", "city or village");
+  if (s != null) {
+    document.getElementById("demo").innerHTML =
+    "Hello, we understand your area is a " + s + ". Please answer the next question";
+  }
+  </script> 
+<button onclick="b()">Click here</button>
+
+<p id="demo"></p>
+
+<script>
+function b() {
+  let s = prompt("Please enter your surrounding:", "city or village");
+  if (s != null) {
+    document.getElementById("demo").innerHTML =
+    "Hello, we understand your area is a " + s + ". Please answer the next question";
+  }
+</script> 
     </body>
       <br>
       <h2>Resources/Information:</h2>
