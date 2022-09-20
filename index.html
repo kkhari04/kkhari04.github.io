@@ -18,22 +18,19 @@ table, th, td {
   
         
       <h2>Add the respective details:</h2>
-      <form>
-         City or Village:<br> <input type="text" name="surrounding">
-          <button type="button" onclick="result();">Enter</button>
-         <br>
-
-         Current Major Problem:<br> <input type="text" name="problem">
-         <button type="button" onclick="result();">Enter</button>
-         <br>
-
-         Budget Available:<br> <input type="text" name="budget">
-        <button type="button" onclick="result();">Enter</button>
-        <br>
-      </form>
-     <p>
-       Your current surrounding is <span id="outputsurrounding">____</span>. The problem you are currently expierencing <span id="outputproblem">____</span>. The budget you have to spend on this cause is <span id="outputbudget">____</span>.
-</p>
+      <button onclick="myFunction()">Enter Data</button>
+      <p id="demo"></p?
+      
+      <script>
+      function myFunction() {
+      let surrounding = prompt("Please Enter your surrounding : City of Village", "Surrounding");
+      if(surrounding != null) {
+      document.getElementById("demo").innerHTML =
+      "We understand that your current surrounding is " + surrounding + ". Please Fill out the next question.";
+      }
+      }
+      </script>
+   
      
     </body>
       <br>
