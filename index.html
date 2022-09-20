@@ -18,7 +18,7 @@ table, th, td {
   
       <p>Click the button to give us an understanding of your situation.</p>
 
-<button onclick="s()">Surrounding</button>
+<button onclick="myFunction()">Surrounding</button>
 
 <p id="demo"></p>
 
@@ -31,24 +31,24 @@ function myFunction() {
   }
 }
 </script>  
-<button onclick="a()">Conflict</button>
+<button onclick="mySFunction()">Conflict</button>
 
 <p id="demo"></p>
 
 <script>
-function a() {
+function mySFunction() {
   let problem = prompt("Please enter the current conflict(s) existing:", "insecurity, enviornment, or shelter");
   if (problem != null) {
     document.getElementById("demo").innerHTML =
     "Hello, we understand your area is experiencing a(n) " + problem + "problem. Please answer the next question";
   }
   </script> 
-<button onclick="b()">Budget</button>
+<button onclick="myTFunction()">Budget</button>
 
 <p id="demo"></p>
 
 <script>
-function b() {
+function myTFunction() {
   let budget = prompt("Please enter your budget for this project:", "$$$");
   if (budget != null) {
     document.getElementById("demo").innerHTML =
