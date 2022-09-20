@@ -32,8 +32,19 @@ table, th, td {
         <br>
       </form>
      <p>
-       Your current surrounding is <span id="outputsurrounding">____</span>. The problem you are currently expierencing <span id="outputproblem">____</span>. The budget you have to spend on this cause is <span id="outputbudget">____</span>
+       Your current surrounding is <span id="outputsurrounding">____</span>. The problem you are currently expierencing <span id="outputproblem">____</span>. The budget you have to spend on this cause is <span id="outputbudget">____</span>.
 </p>
+      <script>
+document.getElementById("surrounding").onclick = function(){
+	var name = prompt("Enter your surrounding");
+  document.getElementById("outputsurrounding").innerText = surrounding;
+}
+
+document.getElementById("city").onclick = function(){
+	var city = prompt("Enter your city");
+  document.getElementById("outputCity").innerText = city;
+}
+</script>
     </body>
       <br>
     <details><summary>FOOD/WATER INSECURITY</summary>
