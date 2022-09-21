@@ -27,7 +27,16 @@ function myFunction() {
   let s = prompt("Please enter your surrounding:", "city or village");
   if (s != null) {
     document.getElementById("demo").innerHTML =
-    "Hello, we understand your area is a " + s + ". Please answer the next question";
+    "Hello, we understand your area is a " + s + ". Please answer the next question on existing conflicts";
+
+if (s =="city")
+  {
+document.getElementById("demo").innerHTML="Correct!";
+  }
+else
+  {
+document.getElementById("demo").innerHTML="Oops!";
+  }
   }
 }
 </script>  
@@ -40,7 +49,7 @@ function mySFunction() {
   let problem = prompt("Please enter the current conflict(s) existing:", "insecurity, enviornment, or shelter");
   if (problem != null) {
     document.getElementById("demo").innerHTML =
-    "Hello, we understand your area is experiencing a(n) " + problem + "problem. Please answer the next question";
+    "We understand your area is experiencing a(n) " + problem + "problem. Please answer the next question on budgeting";
   }
 }
   </script> 
@@ -53,10 +62,12 @@ function myTFunction() {
   let budget = prompt("Please enter your budget for this project:", "$$$");
   if (budget != null) {
     document.getElementById("demo").innerHTML =
-    "Hello, we understand your budget is $" + budget+ ". Please look over the given data base on your provide information. Additionally look under the resources section to find extra information.";
+    "We understand your budget is $" + budget+ ". Please look over the given data based on your provided information. Additionally look under the resources section to find extra information.";
   }
 }
 </script> 
+      
+      
     </body>
       <br>
       <h2>Resources/Information:</h2>
