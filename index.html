@@ -16,19 +16,19 @@ table, th, td {
     <body>
       <h1 style="border:2px solid DodgerBlue;text-align:center;">INDIAN SOCIAL WELFARE RESOURCES</h1>
   
-      <p>Click the button to give us an understanding of your situation.</p>
-
-<button onclick="myFunction()">Surrounding</button>
-
-<p id="demo"></p>
+      <p>Fill in the information to give us an understanding of your situation.</p>
+      
+      <input id="text_a" type="text" />
+<p id="answer"></p>
+<button onclick="myFunction()">Check</button>
 
 <script>
 function myFunction() {
-  let s = prompt("Please enter your surrounding:", "city or village");
-  if (s != null) {
-    document.getElementById("demo").innerHTML =
-    "Hello, we understand your area is a " + s + ". Please answer the next question on existing conflicts";
-
+  //let s = prompt("Please enter your surrounding:", "city or village");
+  //if (s != null) {
+    //document.getElementById("demo").innerHTML =
+    //"Hello, we understand your area is a " + s + ". Please answer the next question on existing conflicts";
+var s =document.getElementById("text_a").value;
 if (s =="city")
   {
 document.getElementById("demo").innerHTML="Correct!";
@@ -37,7 +37,7 @@ else
   {
 document.getElementById("demo").innerHTML="Oops!";
   }
-  }
+  //}
 }
 </script>  
 <button onclick="mySFunction()">Conflict</button>
