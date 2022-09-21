@@ -15,86 +15,50 @@ table, th, td {
     <body style="background-color:LightSalmon;">
     <body>
       <h1 style="border:2px solid DodgerBlue;text-align:center;">INDIAN SOCIAL WELFARE RESOURCES</h1>
-      <br>
-  <p> Please enter your surrounding: city or village </p>
- 
- <input id="text_a" type="text" />
-<p id="answer"></p>
-<button onclick="myFunction()">Enter</button>
+  
+      <p>Click the button to give us an understanding of your situation.</p>
 
-function myFunction()
-{
-var s=document.getElementById("text_a").value;
+<button onclick="myFunction()">Surrounding</button>
 
-if (s=="city")
-  {
-document.getElementById("answer").innerText="Hello, we understand your area is a " + s + ". Please answer the next question!";
-  }
-if else (s==“village”)
-  {
-document.getElementById("answer").innerHTML="Hello, we understand your area is a " + s + ". Please answer the next question!";
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let s = prompt("Please enter your surrounding:", "city or village");
+  if (s != null) {
+    document.getElementById("demo").innerHTML =
+    "Hello, we understand your area is a " + s + ". Please answer the next question on existing conflicts";
   }
 }
-<br>
+</script>  
+<button onclick="mySFunction()">Conflict</button>
 
+<p id="demo"></p>
 
-<p> Please enter the current conflict existing: insecurity, environment, or shelter </p>
-
-<input id="text_b" type="text" />
-<p id="answer"></p>
-<button onclick="mySFunction()">Enter</button>
-
-function myFunction()
-{
-var a=document.getElementById("text_a").value;
-
-if (a=="insecurity")
-  {
-document.getElementById("answer").innerText="We understand your area is experiencing a food or water " + problem + "problem. Please answer the next question!";
-  }
-if else (a==“environment”)
-  {
-document.getElementById("answer").innerHTML="We understand your area is experiencing an " + problem + "problem. Please answer the next question!";
-  }
-
-if else (a==“shelter”)
-  {
-document.getElementById("answer").innerHTML="We understand your area is experiencing a" + problem + "problem. Please answer the next question!";
+<script>
+function mySFunction() {
+  let problem = prompt("Please enter the current conflict(s) existing:", "insecurity, enviornment, or shelter");
+  if (problem != null) {
+    document.getElementById("demo").innerHTML =
+    "We understand your area is experiencing a(n) " + problem + "problem. Please answer the next question on budgeting";
   }
 }
-<br>
+  </script> 
+<button onclick="myTFunction()">Budget</button>
 
+<p id="demo"></p>
 
-<p> Please enter your budget for this project: Enter percentage (as a number) of exiting shelters in an area compared to the population</p>
-
-<input id="text_c" type="text" />
-<p id="answer"></p>
-<button onclick="myTFunction()">Enter</button>
-
-function myFunction()
-{
-int b=document.getElementById("text_a").value;
-
-if (b<20)
-  {
-document.getElementById("answer").innerText= "We understand your area is experiencing an extreme shelter problem due to there being “ + b + “% built shelters in relation to population. Please review the resources and the compiled data.";
+<script>
+function myTFunction() {
+  let budget = prompt("Please enter your budget for this project:", "$$$");
+  if (budget != null) {
+    document.getElementById("demo").innerHTML =
+    "We understand your budget is $" + budget+ ". Please look over the given data based on your provided information. Additionally look under the resources section to find extra information.";
   }
-if else (20<=b<60)
-  {
-document.getElementById("answer").innerHTML="We understand your area is experiencing an high shelter problem due to there being “ + b + “% built shelters in relation to population. Please review the resources and the compiled data";
-  }
-if else (60<=b<=85)
-{
-document.getElementById("answer").innerHTML="We understand your area is experiencing a moderate shelter problem due to there being “ + b + “% built shelters in relation to population. Please review the resources and the compiled data";
-  }
-if else (b>85)
-{
-document.getElementById("answer").innerHTML="We understand your area is experiencing a low shelter problem due to there being “ + b + “% built shelters in relation to population. Please review the resources and the compiled data";
-  }
-
 }
-  <br>   
-
+</script> 
+      
+      
     </body>
       <br>
       <h2>Resources/Information:</h2>
@@ -182,4 +146,3 @@ This will be information on Shelter solutions. Data included in this section wil
 
 
     </html>
-
